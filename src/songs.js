@@ -1,8 +1,8 @@
-import {songs} from "./data.js";
+import { songs } from "./data.js";
 //Exercise 1: Get the array of all Artists.
 function getAllArtists(array) {
     let result = array.map((song) => song.artist);
-  
+
     console.log(result);
     return result;
 };
@@ -20,15 +20,15 @@ getSongsFromArtist(songs, "Adele");
 
 // //Exercise 3: Alphabetic order by title
 function orderAlphabetically(array) {
-    let result = array.map((song) => song.title).sort().slice(0, 10); 
+    let result = array.map((song) => song.title).sort().slice(0, 10);
     console.log(result);
-    return result;      
+    return result;
 };
 orderAlphabetically(songs);
 
 //Exercise 4: Order by year, ascending
 
-    function orderByYear(array) {
+function orderByYear(array) {
     let result = [...array].sort((a, b) => {
         if (a.year !== b.year) return a.year - b.year;
         return a.title.localeCompare(b.title);
