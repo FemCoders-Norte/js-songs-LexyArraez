@@ -45,7 +45,6 @@ function songsByGenre(array, genre) {
     console.log(result);
     return result;
 }
-
 songsByGenre(songs, "Pop");
 
 
